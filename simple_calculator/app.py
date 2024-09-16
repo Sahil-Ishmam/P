@@ -56,3 +56,21 @@ if __name__ == '__main__':
             print("Please Enter a valid Operation type.")
             continue
 
+
+         # Error handling for number
+        a = input("\nEnter first number: ")
+        try : 
+            a = float(a)
+        except Exception as error:
+            print(error)
+            continue
+
+
+        # Error handling for number
+        b = input("\nEnter second number: ")
+        try : 
+            b = float(b)
+        except Exception as error:
+            print(error)
+            continue
+
