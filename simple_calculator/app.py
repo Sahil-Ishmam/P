@@ -8,6 +8,7 @@ University : Metropolitan University
 """
 
 
+
 # function definition
 
 def addition(a,b):
@@ -34,6 +35,7 @@ def modulus(a,b):
 
 # Main function
 if __name__ == '__main__':
+
     while(True):
 
         print("---------------------------------------")
@@ -48,7 +50,9 @@ if __name__ == '__main__':
                  5. Modulus
                  6. Quit
               """)
+        
         operation = input("Enter choice(1/2/3/4/5): ")
+        # some exceptional case has added
         if operation == "6":
             print("Programme Terminated!!")
             break
@@ -56,8 +60,7 @@ if __name__ == '__main__':
             print("Please Enter a valid Operation type.")
             continue
 
-
-         # Error handling for number
+        # Error handling for number
         a = input("\nEnter first number: ")
         try : 
             a = float(a)
@@ -74,7 +77,7 @@ if __name__ == '__main__':
             print(error)
             continue
 
-
+        
         # conditional Logic for user to select operation
 
         if operation == "1": 
@@ -107,4 +110,6 @@ if __name__ == '__main__':
                 # Output formatting
             else :
                 print(result)
+        
 
+        print("---------------------------------------")
