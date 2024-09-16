@@ -74,3 +74,37 @@ if __name__ == '__main__':
             print(error)
             continue
 
+
+        # conditional Logic for user to select operation
+
+        if operation == "1": 
+            result = addition(a,b)
+            print(f"\n{a} + {b} = {result}\n")
+            # Output formatting
+
+        elif operation == "2":
+            result = subtraction(a,b)
+            print(f"\n{a} - {b} = {result}\n")
+            # Output formatting
+
+        elif operation == "3":
+            result = multiplication(a,b)
+            print(f"\n{a} * {b} = {result}\n")
+            # Output formatting
+
+        elif operation == "4":
+            result = division(a,b)
+            if str(result).isdigit():
+                print(f"\n{a} / {b} = {result}\n")
+                # Output formatting
+            else:
+                print(result)
+                
+        elif operation == "5":
+            result = modulus(a,b)
+            if str(result).isdigit():
+                print(f"\n{a} % {b} = {result}\n")
+                # Output formatting
+            else :
+                print(result)
+
