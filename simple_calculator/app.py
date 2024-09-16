@@ -48,4 +48,11 @@ if __name__ == '__main__':
                  5. Modulus
                  6. Quit
               """)
+        operation = input("Enter choice(1/2/3/4/5): ")
+        if operation == "6":
+            print("Programme Terminated!!")
+            break
+        elif operation not in ['1','2','3','4','5']:
+            print("Please Enter a valid Operation type.")
+            continue
 
