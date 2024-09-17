@@ -18,11 +18,11 @@ if __name__ == '__main__':
     while(run):
         print("""
                 Welcome to the Number Guessing Game!
-                Try to guess the number between 1 and 1000
+                Try to guess the number between 1 and 100
             
             """)
         # Generating random number between 1 to 100
-        secret_number = random.randint(1,1000)
+        secret_number = random.randint(1,100)
         count_attempt = 0
 
         while(True):
