@@ -47,8 +47,8 @@ if __name__ == '__main__':
                 print("Too low!")
     
         con = input("Do you want to play this again ? YES/NO : ").lower()
-        yes_words = ['yes','yeah','yup','yah','1']
-        no_words = ['no','nope','not','0']
+        yes_words = ['yes','yeah','yup','yah','1','y']
+        no_words = ['no','nope','not','0',"n"]
         if con in yes_words :
             run = True
         elif con in no_words :
